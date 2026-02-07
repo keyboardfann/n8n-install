@@ -3,7 +3,7 @@ FROM n8nio/runners:stable
 USER root
 
 
-RUN cd /opt/runners/task-runner-python &&  pip install numpy requests notebooklm-py "notebooklm-py[browser]"
+RUN cd /opt/runners/task-runner-python &&  pip install numpy requests notebooklm-py
 
 # Install npm packages that can be used in Code nodes
 # These must match NODE_FUNCTION_ALLOW_EXTERNAL in n8n-task-runners.json
